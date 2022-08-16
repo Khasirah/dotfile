@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Neovim from scratch
 
 **Important Update** When I initially created this repo I didn't anticipate the amount of breaking changes, if you'd like to use the same basic config as this one as a base I recommend my new repo: [nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide)
@@ -77,3 +78,9 @@ nvim -v
 > The computing scientist's main challenge is not to get confused by the complexities of his own making. 
 
 \- Edsger W. Dijkstra
+=======
+# dotfile
+setting nvim
+
+this dotfile i modified from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch)
+>>>>>>> 510e408ddda446279baec06969f8fedfa6801417
