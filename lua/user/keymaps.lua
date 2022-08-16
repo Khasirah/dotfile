@@ -11,12 +11,12 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Modes
---   normal_mode = "n",
---   insert_mode = "i",
---   visual_mode = "v",
---   visual_block_mode = "x",
---   term_mode = "t",
---   command_mode = "c",
+  -- normal_mode = "n",
+  -- insert_mode = "i",
+  -- visual_mode = "v",
+  -- visual_block_mode = "x",
+  -- term_mode = "t",
+  -- command_mode = "c",
 
 -- Normal --
 -- Better window navigation
@@ -39,9 +39,36 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- Save & Quit
+keymap("n", "<C-q>", ":q<CR>", opts)
+keymap("n", "<C-s>", ":w<CR>", opts)
+
+-- Quit Buffer
+keymap("n", "<F4>", ":bd<CR>", opts)
+
+-- Ctrl-P, find files
+keymap("n", "<C-p>", "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>", opts)
+
+-- Open NvimTreeToggle
+keymap("n", "<C-b>", "<cmd>NvimTreeToggle<cr>", opts)
+
+-- Shift Arrow Selection
+keymap("n", "<S-Up>", "v<Up>", opts)
+keymap("n", "<S-Down>", "v<Down>", opts)
+keymap("n", "<S-Left>", "v<Left>", opts)
+keymap("n", "<S-Right>", "v<Right>", opts)
+
+-- Copy & Paste
+keymap("n", "<C-c>", "y<esc>i", opts)
+keymap("n", "<C-v>", "pi", opts)
+
 -- Insert --
 -- Press jk fast to exit insert mode 
 keymap("i", "jk", "<ESC>", opts)
+
+-- Copy & Paste
+keymap("i", "<C-c>", "y<esc>i", opts)
+keymap("i", "<C-v>", "pi", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -52,6 +79,10 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
+
+-- Copy & Paste
+keymap("v", "<C-c>", "y<esc>i", opts)
+keymap("v", "<C-v>", "pi", opts)
 
 -- Visual Block --
 -- Move text up and down
