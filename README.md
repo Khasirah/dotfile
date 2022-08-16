@@ -1,0 +1,2 @@
+# dotfile
+setting nvim
