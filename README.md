@@ -1,3 +1,8 @@
+=======
+# dotfile
+setting nvim
+
+this dotfile i modified from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch)
 <<<<<<< HEAD
 # Neovim from scratch
 
@@ -78,8 +83,4 @@ nvim -v
 > The computing scientist's main challenge is not to get confused by the complexities of his own making. 
 
 \- Edsger W. Dijkstra
-=======
-# dotfile
-setting nvim
 
-this dotfile i modified from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch)
